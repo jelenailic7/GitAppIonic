@@ -11,6 +11,10 @@ $font-path: "../assets/fonts";
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
+$action-sheet-max-width:500px;
+$searchbar-md-padding:5px;
+$searchbar-md-input-box-shadow:1px;
+$searchbar-md-input-border-radius:1px;
 
 @import "ionic.globals";
 
