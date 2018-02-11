@@ -16,9 +16,8 @@
     </ion-row>
   </ion-grid>
 <button ion-button block (click)="getRepo(username)">Search</button>
-<div *ngFor = "let repo of repos">
-<ion-card>
-  <img src="img/nin-live.png"/>
+<div *ngFor="let repo of repos">
+<ion-card >
   <ion-card-content>
     <ion-card-title>
       {{ repo.name }}    
