@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { HomeService } from '../../shared/home.service';
+import { GitService } from '../../shared/git.service';
 
 
 @Component({
@@ -12,11 +12,11 @@ export class HomePage {
  username:any;
  repos;
 
-  constructor(public navCtrl: NavController, public homeService: HomeService) {
+  constructor(public navCtrl: NavController, public gitService: GitService) {
 
   }
   public getRepo(username){
-   this.homeService.getRepos(this.username).subscribe(
+   this.gitService.getRepos(this.username).then(
     data => {
         this.repos = data || [];
     }); 

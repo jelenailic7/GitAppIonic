@@ -7,9 +7,8 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { HomeService } from '../shared/home.service';
+import { GitService } from '../shared/git.service';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -20,7 +19,6 @@ import { HttpModule } from '@angular/http';
   imports: [
     BrowserModule,
     HttpClientModule,
-    HttpModule,
     IonicModule.forRoot(MyApp),
 
   ],
@@ -33,7 +31,7 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    HomeService
+    GitService
   ]
 })
 export class AppModule {}
